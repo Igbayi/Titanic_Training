@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import sklearn
+
 
 st.title("Salary prediction web Application")
 
