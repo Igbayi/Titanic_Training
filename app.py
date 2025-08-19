@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-
+import sklearn
 st.title("titanic survival prediction")
 
 st.write("This web application will predict  the survival rate of passengers")
@@ -21,6 +21,7 @@ if st.button('Predict'):
     Pred = model.predict([[Pclass, Age, SibSp, Parch, Fare, Sex_male, Embarked_Q, Embarked_S]])
     st.text(f'Passengers survival rate is {Pred[0]}')
     st.text("Thank you for using the application")
+
 
 
 
